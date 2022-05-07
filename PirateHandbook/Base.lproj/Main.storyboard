@@ -21,10 +21,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QGh-T7-h7u">
-                                <rect key="frame" x="71" y="44" width="272" height="125.5"/>
+                                <rect key="frame" x="71" y="44" width="272" height="166"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhg-AD-sJU">
-                                        <rect key="frame" x="0.0" y="0.0" width="272" height="36.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="272" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Bdd-Fn-TNc"/>
+                                        </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Treasure map">
@@ -33,7 +36,7 @@
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Gi-t0-FWY">
-                                        <rect key="frame" x="0.0" y="44.5" width="272" height="36.5"/>
+                                        <rect key="frame" x="0.0" y="58" width="272" height="50"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Weather Forecast">
@@ -42,10 +45,10 @@
                                         </buttonConfiguration>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="YkV-F1-ctY">
-                                        <rect key="frame" x="0.0" y="89" width="272" height="36.5"/>
+                                        <rect key="frame" x="0.0" y="116" width="272" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFD-on-s9J">
-                                                <rect key="frame" x="0.0" y="0.0" width="130" height="36.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="50"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Privacy Policy">
@@ -54,7 +57,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbr-qm-0IW">
-                                                <rect key="frame" x="142" y="0.0" width="130" height="36.5"/>
+                                                <rect key="frame" x="142" y="0.0" width="130" height="50"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="FAQs">
@@ -65,10 +68,26 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="4Gi-t0-FWY" firstAttribute="height" secondItem="xhg-AD-sJU" secondAttribute="height" id="30U-6r-vyF"/>
+                                    <constraint firstItem="Vbr-qm-0IW" firstAttribute="height" secondItem="xhg-AD-sJU" secondAttribute="height" id="7Or-YR-ocm"/>
+                                    <constraint firstItem="zFD-on-s9J" firstAttribute="height" secondItem="xhg-AD-sJU" secondAttribute="height" id="VR8-fv-4eo"/>
+                                </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Please do not pirate the Pirate Handbook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Nhk-pU-ncA">
+                                <rect key="frame" x="20" y="833.5" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nhk-pU-ncA" secondAttribute="trailing" id="0kN-aH-Iq5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nhk-pU-ncA" secondAttribute="bottom" constant="8" id="1Td-Ud-xPW"/>
+                            <constraint firstItem="Nhk-pU-ncA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ag3-LH-FPG"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
