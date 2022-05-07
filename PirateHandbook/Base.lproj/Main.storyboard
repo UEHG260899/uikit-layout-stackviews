@@ -20,8 +20,8 @@
                                 <rect key="frame" x="-476" y="0.0" width="1366" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QGh-T7-h7u">
-                                <rect key="frame" x="71" y="44" width="272" height="166"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QGh-T7-h7u">
+                                <rect key="frame" x="71" y="370" width="272" height="166"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhg-AD-sJU">
                                         <rect key="frame" x="0.0" y="0.0" width="272" height="50"/>
@@ -85,8 +85,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Nhk-pU-ncA" secondAttribute="trailing" id="0kN-aH-Iq5"/>
+                            <constraint firstItem="QGh-T7-h7u" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="17O-NS-WkO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nhk-pU-ncA" secondAttribute="bottom" constant="8" id="1Td-Ud-xPW"/>
                             <constraint firstItem="Nhk-pU-ncA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ag3-LH-FPG"/>
+                            <constraint firstItem="QGh-T7-h7u" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xl7-IT-yCy"/>
                         </constraints>
                     </view>
                 </viewController>
